@@ -1,0 +1,18 @@
+<p><a href="/movies/">Go back</a></p>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">{{movie.title}}</h1>
+    <img src="{{movie.image}}" class="rounded float-left imgMovie"><br>
+    <p class="lead">Director : {{movie.director}}</p>
+    <ul>
+      {{#each movie.stars}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p class="lead">{{movie.description}}</p>
+    <p> {{#each movie.showtimes}}
+        {{this}} |
+      {{/each}}
+    </p>
+  </div>
+</div>

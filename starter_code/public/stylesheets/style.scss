@@ -6,3 +6,18 @@ body {
 a {
   color: #00B7FF;
 }
+
+.cards-container {
+  display: flex;
+  padding: 10% 20%;
+  justify-content: space-around;
+}
+
+.cards-container img {
+  object-fit: cover;
+  object-position: center;
+  height: 400px;
+}
+.imgMovie{
+  margin-right: 3em;
+}
